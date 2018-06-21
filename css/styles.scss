@@ -1,3 +1,22 @@
+// 
+
 body {
   font-family: 'Roboto', sans-serif;
+  margin: 0;
 }
+
+section {
+  display: flex;
+  width: 100%;
+  &.cover {
+    height: calc(100vh - 100px);
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(60deg, rgba(189, 126, 31, 0.81), rgba(144, 65, 18, 0.72)), url(../img/cover.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}
+
