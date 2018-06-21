@@ -1,5 +1,5 @@
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 0;
 }
 
@@ -101,12 +101,6 @@ section.content .content-section .left span {
 section.content .content-section .right {
   width: calc(100% - 250px);
   padding-top: 40px;
-  /** 
-        * what we do
-        */
-  /** 
-        * explore opportunities
-        */
 }
 
 section.content .content-section .right p {

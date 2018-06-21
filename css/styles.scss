@@ -1,11 +1,9 @@
-// 
-
 $black-text-color: black;
 $white-text-color: white;
 $gray-text-color: #5d5b5b;
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 0;
 }
 
@@ -17,7 +15,12 @@ section {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(60deg, rgba(189, 82, 31, 0.81), rgba(101, 53, 24, 0.72)), url(../img/cover.jpg) no-repeat center center fixed;
+    background: linear-gradient(
+        60deg,
+        rgba(189, 82, 31, 0.81),
+        rgba(101, 53, 24, 0.72)
+      ),
+      url(../img/cover.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -68,9 +71,7 @@ section {
   }
   &.content {
     width: calc(100% - 350px);
-    // display: flex;
     flex-direction: column;
-    // width: 100%;
     background: white;
     padding-left: 250px;
     padding-right: 100px;
@@ -81,23 +82,17 @@ section {
       .left {
         width: 250px;
         display: flex;
-        // width: calc(40% - 250px);
         padding-top: 40px;
         span {
           width: 100%;
           font-size: 30px;
           font-weight: bold;
-          // padding-left: 250px;
           padding-right: 70px;
         }
       }
-      .right{
+      .right {
         width: calc(100% - 250px);
         padding-top: 40px;
-        // padding-right: 54px;
-        /** 
-        * what we do
-        */
         p {
           margin-top: 0;
           margin-bottom: 20px;
@@ -106,9 +101,6 @@ section {
           line-height: 1.6;
           font-weight: lighter;
         }
-        /** 
-        * explore opportunities
-        */
         .card {
           height: 100px;
           display: flex;
@@ -117,9 +109,9 @@ section {
           justify-content: space-between;
           padding: 0 30px;
           margin-bottom: 30px;
-          -webkit-box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.09);
-          -moz-box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.09);
-          box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.09);
+          -webkit-box-shadow: 0px 0px 19px 0px rgba(0, 0, 0, 0.09);
+          -moz-box-shadow: 0px 0px 19px 0px rgba(0, 0, 0, 0.09);
+          box-shadow: 0px 0px 19px 0px rgba(0, 0, 0, 0.09);
           .card-content {
             display: flex;
             flex-direction: column;
@@ -133,8 +125,8 @@ section {
               font-weight: lighter;
             }
           }
-          .card-action{
-            a{
+          .card-action {
+            a {
               height: 48px;
               width: 130px;
               display: flex;
@@ -149,7 +141,7 @@ section {
           }
         }
       }
-      &.what-we-do{
+      &.what-we-do {
         height: 400px;
       }
       &.explore-opportunities {
@@ -177,10 +169,10 @@ section {
           color: $gray-text-color;
           margin-right: 10px;
           font-size: 30px;
-          &:first-child{
+          &:first-child {
             margin-left: 10px;
           }
-          &:last-child{
+          &:last-child {
             margin-right: 0;
           }
         }
@@ -188,4 +180,3 @@ section {
     }
   }
 }
-
