@@ -21,9 +21,9 @@ section {
     color: white;
     .header {
       display: flex;
-      justify-content: space-between;
       width: 100%;
       height: 60px;
+      justify-content: space-between;
       margin-top: 30px;
       .logo {
         height: 40px;
@@ -51,15 +51,47 @@ section {
     }
     .see-more {
       display: flex;
-      height: 100px;
       justify-content: center;
       align-items: flex-start;
+      height: 100px;
       width: 100%;
       a {
         text-decoration: none;
         color: white;
         font-size: 50px;
       }
+    }
+  }
+  &.content {
+    background: white;
+    .left {
+      display: flex;
+      justify-content: center;
+      width: 40%;
+      padding-top: 40px;
+      span {
+        font-size: 30px;
+        font-weight: bold;
+      }
+    }
+    .right{
+      width: 60%;
+      padding-top: 40px;
+      padding-right: 54px;
+      p {
+        margin-top: 0;
+        margin-bottom: 20px;
+        color: #5d5b5b;
+        word-spacing: 5px;
+        line-height: 1.6;
+        font-weight: lighter;
+      }
+    }
+    &.what-we-do{
+      height: 400px;
+    }
+    &.explore-opportunities {
+      min-height: 400px;
     }
   }
 }
