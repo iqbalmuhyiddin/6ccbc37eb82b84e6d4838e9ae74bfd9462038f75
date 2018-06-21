@@ -33,14 +33,14 @@ section {
       justify-content: space-between;
       align-items: center;
       margin-top: 30px;
-      @media only screen and (max-width: 500px) {
+      @media only screen and (max-width: 530px) {
         font-size: 30px;
         height: 40px;
       }
       .logo {
         height: 40px;
         margin-left: 30px;
-        @media only screen and (max-width: 500px) {
+        @media only screen and (max-width: 530px) {
           margin-left: 20px;
           height: 30px;
         }
@@ -54,13 +54,13 @@ section {
           color: #cecaca;
           text-decoration: none;
           margin-right: 30px;
-          @media only screen and (max-width: 500px) {
+          @media only screen and (max-width: 530px) {
             margin-right: 10px;
           }
           &.link-mobile{
             display: none;
           }
-          @media only screen and (max-width: 500px) {
+          @media only screen and (max-width: 530px) {
             &.link{
               display: none;
             }
