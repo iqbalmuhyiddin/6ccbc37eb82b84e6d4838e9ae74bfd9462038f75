@@ -62,6 +62,10 @@ section.cover .header .nav-bar a {
   margin-right: 30px;
 }
 
+section.cover .header .nav-bar a:hover {
+  color: white;
+}
+
 @media only screen and (max-width: 530px) {
   section.cover .header .nav-bar a {
     margin-right: 10px;
@@ -118,6 +122,10 @@ section.cover .see-more a {
   text-decoration: none;
   color: white;
   font-size: 50px;
+}
+
+section.cover .see-more a:hover {
+  transform: scale(1.2);
 }
 
 @media only screen and (max-width: 500px) {
@@ -293,6 +301,10 @@ section.content .content-section .right .card .card-action a {
   color: white;
   border-radius: 5px;
   font-size: 15px;
+}
+
+section.content .content-section .right .card .card-action a:hover {
+  background: #ea6306;
 }
 
 section.content .content-section.what-we-do {

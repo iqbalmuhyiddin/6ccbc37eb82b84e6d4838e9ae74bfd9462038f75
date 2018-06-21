@@ -54,6 +54,9 @@ section {
           color: #cecaca;
           text-decoration: none;
           margin-right: 30px;
+          &:hover {
+            color: white;
+          }
           @media only screen and (max-width: 530px) {
             margin-right: 10px;
           }
@@ -98,6 +101,9 @@ section {
         text-decoration: none;
         color: white;
         font-size: 50px;
+        &:hover {
+          transform: scale(1.2);
+        }
         @media only screen and (max-width: 500px) {
           font-size: 30px;
         }
@@ -227,6 +233,9 @@ section {
               color: white;
               border-radius: 5px;
               font-size: 15px;
+              &:hover {
+                background: #ea6306;
+              }
             }
           }
         }
