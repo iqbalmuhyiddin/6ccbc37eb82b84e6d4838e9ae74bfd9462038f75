@@ -26,12 +26,27 @@ section.cover .header {
   height: 60px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-top: 30px;
+}
+
+@media only screen and (max-width: 500px) {
+  section.cover .header {
+    font-size: 30px;
+    height: 40px;
+  }
 }
 
 section.cover .header .logo {
   height: 40px;
   margin-left: 30px;
+}
+
+@media only screen and (max-width: 500px) {
+  section.cover .header .logo {
+    margin-left: 20px;
+    height: 30px;
+  }
 }
 
 section.cover .header .nav-bar {
@@ -47,6 +62,26 @@ section.cover .header .nav-bar a {
   margin-right: 30px;
 }
 
+@media only screen and (max-width: 500px) {
+  section.cover .header .nav-bar a {
+    margin-right: 10px;
+  }
+}
+
+section.cover .header .nav-bar a.link-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 500px) {
+  section.cover .header .nav-bar a.link {
+    display: none;
+  }
+  section.cover .header .nav-bar a.link-mobile {
+    display: flex;
+    font-size: 20px;
+  }
+}
+
 section.cover .header .nav-bar a.active {
   font-weight: bold;
   color: white;
@@ -55,6 +90,14 @@ section.cover .header .nav-bar a.active {
 section.cover .title {
   font-size: 40px;
   font-weight: bold;
+  text-align: center;
+  padding: 0 20px;
+}
+
+@media only screen and (max-width: 500px) {
+  section.cover .title {
+    font-size: 30px;
+  }
 }
 
 section.cover .see-more {
@@ -65,19 +108,63 @@ section.cover .see-more {
   align-items: flex-start;
 }
 
+@media only screen and (max-width: 500px) {
+  section.cover .see-more {
+    height: 50px;
+  }
+}
+
 section.cover .see-more a {
   text-decoration: none;
   color: white;
   font-size: 50px;
 }
 
+@media only screen and (max-width: 500px) {
+  section.cover .see-more a {
+    font-size: 30px;
+  }
+}
+
 section.content {
-  width: calc(100% - 350px);
+  width: calc(100% - 300px);
   flex-direction: column;
   background: white;
-  padding-left: 250px;
+  padding-left: 200px;
   padding-right: 100px;
   margin-top: 100px;
+}
+
+@media only screen and (max-width: 1200px) {
+  section.content {
+    width: calc(100% - 180px);
+    padding-left: 90px;
+    padding-right: 90px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  section.content {
+    width: calc(100% - 200px);
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  section.content {
+    width: calc(100% - 100px);
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  section.content {
+    width: calc(100% - 40px);
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 section.content .content-section {
@@ -86,10 +173,30 @@ section.content .content-section {
   width: 100%;
 }
 
+@media only screen and (max-width: 850px) {
+  section.content .content-section {
+    flex-direction: column;
+  }
+}
+
 section.content .content-section .left {
   width: 250px;
   display: flex;
   padding-top: 40px;
+}
+
+@media only screen and (max-width: 850px) {
+  section.content .content-section .left {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  section.content .content-section .left {
+    width: 100%;
+  }
 }
 
 section.content .content-section .left span {
@@ -99,9 +206,22 @@ section.content .content-section .left span {
   padding-right: 70px;
 }
 
+@media only screen and (max-width: 850px) {
+  section.content .content-section .left span {
+    font-size: 25px;
+    padding-right: 0;
+  }
+}
+
 section.content .content-section .right {
   width: calc(100% - 250px);
   padding-top: 40px;
+}
+
+@media only screen and (max-width: 850px) {
+  section.content .content-section .right {
+    width: 100%;
+  }
 }
 
 section.content .content-section .right p {
@@ -114,16 +234,24 @@ section.content .content-section .right p {
 }
 
 section.content .content-section .right .card {
-  height: 100px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 0 30px;
+  padding: 30px;
   margin-bottom: 30px;
   -webkit-box-shadow: 0px 0px 19px 0px rgba(0, 0, 0, 0.09);
   -moz-box-shadow: 0px 0px 19px 0px rgba(0, 0, 0, 0.09);
   box-shadow: 0px 0px 19px 0px rgba(0, 0, 0, 0.09);
+}
+
+@media only screen and (max-width: 850px) {
+  section.content .content-section .right .card {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 20px;
+  }
 }
 
 section.content .content-section .right .card .card-content {
@@ -137,14 +265,26 @@ section.content .content-section .right .card .card-content .main-info {
   margin-bottom: 5px;
 }
 
+@media only screen and (max-width: 850px) {
+  section.content .content-section .right .card .card-content .main-info {
+    margin-bottom: 1px;
+  }
+}
+
 section.content .content-section .right .card .card-content .secondary-info {
   color: #5d5b5b;
   font-weight: lighter;
 }
 
+@media only screen and (max-width: 850px) {
+  section.content .content-section .right .card .card-content {
+    margin-bottom: 10px;
+  }
+}
+
 section.content .content-section .right .card .card-action a {
-  height: 48px;
-  width: 130px;
+  height: 38px;
+  width: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -152,11 +292,17 @@ section.content .content-section .right .card .card-action a {
   text-decoration: none;
   color: white;
   border-radius: 5px;
-  font-size: 19px;
+  font-size: 15px;
 }
 
 section.content .content-section.what-we-do {
-  height: 400px;
+  min-height: 400px;
+}
+
+@media only screen and (max-width: 850px) {
+  section.content .content-section.what-we-do {
+    min-height: 400px;
+  }
 }
 
 section.content .content-section.explore-opportunities {
@@ -175,12 +321,37 @@ section.content .footer {
   color: #5d5b5b;
   font-size: 17px;
   font-weight: lighter;
+  text-align: center;
+}
+
+section.content .footer .for-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 960px) {
+  section.content .footer {
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 20px;
+  }
+  section.content .footer .for-mobile {
+    display: block;
+  }
+  section.content .footer .for-desktop {
+    display: none;
+  }
 }
 
 section.content .footer .social-media {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+}
+
+@media only screen and (max-width: 960px) {
+  section.content .footer .social-media {
+    display: none;
+  }
 }
 
 section.content .footer .social-media a {
