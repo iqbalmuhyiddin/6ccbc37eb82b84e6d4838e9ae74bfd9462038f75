@@ -1,13 +1,17 @@
 // 
 
+$black-text-color: black;
+$white-text-color: white;
+$gray-text-color: #5d5b5b;
+
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
 }
 
 section {
-  display: flex;
   width: 100%;
+  display: flex;
   &.cover {
     height: calc(100vh - 100px);
     flex-direction: column;
@@ -20,9 +24,9 @@ section {
     background-size: cover;
     color: white;
     .header {
-      display: flex;
       width: 100%;
       height: 60px;
+      display: flex;
       justify-content: space-between;
       margin-top: 30px;
       .logo {
@@ -50,11 +54,11 @@ section {
       font-weight: bold;
     }
     .see-more {
+      height: 100px;
+      width: 100%;
       display: flex;
       justify-content: center;
       align-items: flex-start;
-      height: 100px;
-      width: 100%;
       a {
         text-decoration: none;
         color: white;
@@ -63,35 +67,124 @@ section {
     }
   }
   &.content {
+    width: calc(100% - 350px);
+    // display: flex;
+    flex-direction: column;
+    // width: 100%;
     background: white;
-    .left {
+    padding-left: 250px;
+    padding-right: 100px;
+    .content-section {
       display: flex;
-      justify-content: center;
-      width: 40%;
-      padding-top: 40px;
-      span {
-        font-size: 30px;
-        font-weight: bold;
+      flex-direction: row;
+      width: 100%;
+      .left {
+        width: 250px;
+        display: flex;
+        // width: calc(40% - 250px);
+        padding-top: 40px;
+        span {
+          width: 100%;
+          font-size: 30px;
+          font-weight: bold;
+          // padding-left: 250px;
+          padding-right: 70px;
+        }
+      }
+      .right{
+        width: calc(100% - 250px);
+        padding-top: 40px;
+        // padding-right: 54px;
+        /** 
+        * what we do
+        */
+        p {
+          margin-top: 0;
+          margin-bottom: 20px;
+          color: $gray-text-color;
+          word-spacing: 5px;
+          line-height: 1.6;
+          font-weight: lighter;
+        }
+        /** 
+        * explore opportunities
+        */
+        .card {
+          height: 100px;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          padding: 0 30px;
+          margin-bottom: 30px;
+          -webkit-box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.09);
+          -moz-box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.09);
+          box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.09);
+          .card-content {
+            display: flex;
+            flex-direction: column;
+            .main-info {
+              font-size: 22px;
+              font-weight: 500;
+              margin-bottom: 5px;
+            }
+            .secondary-info {
+              color: $gray-text-color;
+              font-weight: lighter;
+            }
+          }
+          .card-action{
+            a{
+              height: 48px;
+              width: 130px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              background: #fd7314;
+              text-decoration: none;
+              color: white;
+              border-radius: 5px;
+              font-size: 19px;
+            }
+          }
+        }
+      }
+      &.what-we-do{
+        height: 400px;
+      }
+      &.explore-opportunities {
+        min-height: 400px;
+        padding-bottom: 50px;
+        border-bottom: 1px solid #ececec;
       }
     }
-    .right{
-      width: 60%;
-      padding-top: 40px;
-      padding-right: 54px;
-      p {
-        margin-top: 0;
-        margin-bottom: 20px;
-        color: #5d5b5b;
-        word-spacing: 5px;
-        line-height: 1.6;
-        font-weight: lighter;
+    .footer {
+      width: 100%;
+      height: 90px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 50px;
+      color: $gray-text-color;
+      font-size: 17px;
+      font-weight: lighter;
+      .social-media {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        a {
+          text-decoration: none;
+          color: $gray-text-color;
+          margin-right: 10px;
+          font-size: 30px;
+          &:first-child{
+            margin-left: 10px;
+          }
+          &:last-child{
+            margin-right: 0;
+          }
+        }
       }
-    }
-    &.what-we-do{
-      height: 400px;
-    }
-    &.explore-opportunities {
-      min-height: 400px;
     }
   }
 }
